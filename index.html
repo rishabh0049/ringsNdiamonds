@@ -1,0 +1,1178 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jewelry</title>
+    <link rel="shortcut icon" href="images/logo.png" type="image/x-icon">
+    <style>
+        * {
+            margin: 0px;
+        }
+
+        .parent {
+            margin-top: 20pt;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .second {
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+            margin-top: 15pt;
+            margin-left: -8vw;
+        }
+
+        .third {
+            display: flex;
+            align-items: center;
+            justify-content: space-evenly;
+            margin-top: -15pt;
+        }
+
+        .img1 {
+            width: 50%;
+            margin-left: 11vw;
+        }
+
+        .img2 {
+            width: 20%;
+        }
+
+        .img3 {
+            width: 10%;
+        }
+
+        .subnav {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 20pt;
+        }
+
+
+        .sub1 {
+            display: flex;
+
+            margin-left: 11vw;
+        }
+
+        .sub2 {
+            display: flex;
+            align-items: center;
+            margin-right: 7vw;
+        }
+
+        .inq {
+            width: 80%;
+            margin-top: 8pt;
+        }
+
+        .not2 {
+            margin-top: 14pt;
+            margin-left: -10pt;
+        }
+
+        .user {
+            width: 15%;
+            margin-right: 1vw;
+        }
+
+        .feedback {
+
+            width: 60%;
+        }
+
+        .ringDiv {
+            margin-left: 37vw;
+            margin-top: 15vh;
+        }
+
+        #ringid1 {
+            z-index: -1;
+            transform: translateX(-39vw);
+            margin-left: 2vw;
+            margin-top: 2vw;
+            width: 30%;
+        }
+
+        .ring1 {
+
+            animation: orbit1 1s linear forwards;
+            animation-timing-function: ease-in-out;
+        }
+
+
+
+        #ringid2 {
+            width: 40%;
+            z-index: -1;
+            transform: translateY(-13vw);
+            /* margin-top: -2vw; */
+        }
+
+        .ring2 {
+
+            animation: orbit2 1s linear forwards;
+            animation-timing-function: ease-in-out;
+            /* Chrome, Safari 5 */
+            /* transform: translateY(-200px); */
+        }
+
+
+
+
+        #ringid3 {
+            z-index: -1;
+            transform: translateX(39vw);
+            /* margin-top: 4vw; */
+            width: 30%;
+
+        }
+
+        .ring3 {
+
+            animation: orbit3 1s linear forwards;
+            animation-timing-function: ease-in-out;
+        }
+
+
+        #large1,
+        #large2,
+        #large3,
+        #bold1,
+        #bold2,
+        #bold3,
+        #price1,
+        #price2,
+        #price3,
+        #dis1,
+        #dis2,
+        #dis3 {
+            transition: opacity 0.5s ease-in-out;
+        }
+
+        .rotationBox {
+            position: relative;
+            height: 969px;
+            width: 100%;
+        }
+
+        .btn {
+            position: absolute;
+            transition: 0.5s ease-in-out;
+        }
+
+        .opacZero {
+            opacity: 0;
+        }
+
+        .opacFull {
+            opacity: 1;
+        }
+        #s5,#s6,#s7,#s2,#s3,#s4{
+            margin-top:-17.9vw;
+        }
+        @media only screen and (max-width: 1200px) {
+            #btn3 {
+                margin-top: 30px;
+            }
+        }
+
+        @media only screen and (max-width: 1000px) {
+            #btn3 {
+                margin-top: 80px;
+            }
+
+            #btn2 {
+                margin-top: 40px;
+            }
+
+            #btn1 {
+                margin-top: 20px;
+            }
+        }
+
+        @media only screen and (max-width: 500px) {
+            #s4{
+                margin-top: -18.5vw;;
+            }
+            #s5{
+                margin-top: -18.5vw;
+            }
+            #s6{
+                margin-top: -18.5vw;
+            }
+            #s7{
+                margin-top: -18.5vw;
+            }
+        }
+        @media only screen and (max-width: 800px) {
+            #btn1 {
+                margin-top: 80px;
+            }
+
+            #btn2 {
+                margin-top: 100px;
+            }
+
+            #btn3 {
+                margin-top: 180px;
+            }
+            
+            
+           
+        }
+
+        @media only screen and (min-width: 601px) {
+            #light1 {
+                margin-top: 3.2vw;
+            }
+        }
+
+       
+        @media only screen and (max-width: 600px) {
+            #btn1 {
+                margin-top: 100px;
+            }
+
+            #btn2 {
+                margin-top: 120px;
+            }
+
+            #btn3 {
+                margin-top: 210px;
+            }
+
+            #light1 {
+                margin-top: 10vw;
+            }
+
+        }
+    </style>
+</head>
+
+
+<body>
+    <div class="parent">
+        <div class="first">
+            <img class="img1" src="images/Group 1.png" alt="">
+        </div>
+        <div class="second">
+            <img class="img2" style="width: 18%;" src="images/Diamonds.png" alt="">
+            <img class="img2" src="images/Accessories.png" alt="">
+            <img class="img2" style="width:21%" src="images/Fine Jewelry.png" alt="">
+            <img class="img2" style="width:15%;" src="images/Watches.png" alt="">
+
+        </div>
+        <div class="third">
+            <img class="img3" style="margin-right:2vw;" src="images/Icon feather-search.png" alt="">
+            <img class="img3" style="margin-right:2vw;" src="images/Icon feather-heart.png" alt="">
+            <img class="img3" style="margin-right:8vw;" src="images/Icon awesome-user.png" alt="">
+
+        </div>
+    </div>
+    <div class="subnav">
+        <div class="sub1">
+
+            <div><img class="not1" src="images/Icon material-message.png" alt=""></div>
+            <div><img class="not2" src="images/notify1.png" alt=""></div>
+            <div><img class="inq" src="images/Inquiry.png" alt=""></div>
+        </div>
+        <div class="sub2">
+            <img class="user" src="images/user4.png" alt="">
+            <img class="feedback" src="images/Feedback.png" alt="">
+        </div>
+
+    </div>
+
+    <div id="myDIV" class="rotationBox">
+        <div style="cursor:pointer;">
+            <img src="images/Delaney Tiered Hidden Halo Engagement Ring.png" alt="" class="btn" id="btn1"
+                onclick="btn1()">
+            <div id="large1" class="opacFull" style="width:80%;margin-left: 10vw;margin-top: 1.3vw;">
+                <img id="light1" width="100%" src="images/Vintage & Antique.png" alt="">
+            </div>
+        </div>
+        <div style="cursor:pointer;"><img src="images/Image 53.png" alt="" class="btn" id="btn2" onclick="btn2()">
+            <div id="large2" class="opacZero" style="margin-top: -10.15vw;width: 60%;margin-left: 23vw;"><img
+                    width="100%" id="light2" src="images/Hidden Halo.png" alt=""></div>
+        </div>
+        <div style="cursor:pointer;"><img src="images/Image 55.png" alt="" class="btn" id="btn3" onclick="btn3()">
+            <div id="large3" class="opacZero" style="margin-top: -10.15vw;width:60%;margin-left: 20vw; "><img
+                    id="light3" width="100%" src="images/Pave.png" alt=""></div>
+        </div>
+
+    </div>
+
+
+    <div style="margin-left:35vw ;margin-top:-614px;">
+        <img id="bold1" class="opacFull" src="images/darkVintage.png" style="width: 40%;" alt="">
+        <img id="bold2" class="opacZero" src="images/darkPave.png" style="width: 30%;margin-left: -22.5vw;" alt="">
+        <img id="bold3" class="opacZero" src="images/darkHalo.png" style="width: 28%;margin-left: -18.5vw;" alt="">
+    </div>
+    <div>
+        <img src="images/Line 1.png" width="5%" style="margin-left: 45.5vw;" alt="">
+    </div>
+    <div style="margin-left:40.5vw;margin-top: -5px;">
+        <img id="price1" class="opacFull" src="images/$4500.png" width="25%" alt="">
+        <img id="price2" class="opacZero" src="images/$2500.png" style="margin-left: -14.8vw;" width="25%" alt="">
+        <img id="price3" class="opacZero" src="images/$3500.png" style="margin-left: -14.8vw;" width="25%" alt="">
+    </div>
+    <div style="margin-left: 39vw;margin-top: 10px;">
+        <img id="dis1" class="opacFull" src="images/dis3.png" width="30%" alt="">
+        <img id="dis2" class="opacZero" src="images/dis1.png" style="margin-left: -18vw;" width="30%" alt="">
+        <img id="dis3" class="opacZero" src="images/dis2.png" style="margin-left: -17.5vw;" width="30%" alt="">
+
+    </div>
+    <div style="display: flex;justify-content:space-around; align-items:center;margin-top: 40px; ">
+        <div style="display: flex;align-items: center;">
+            <div style="width:2.5vw;"><img width="100%" src="images/Icon awesome-facebook.png" alt=""></div>
+            <div
+                style="display: flex;align-items:center;justify-content:center;margin-left: 15px;border-radius:1.25vw;background-color: #929292;width: 2.4vw;height: 2.4vw;">
+                <img style="width:75%" src="images/Icon awesome-twitter.png" alt="">
+            </div>
+            <div
+                style="display: flex;align-items:center;justify-content:center;margin-left: 15px;border-radius:1.25vw;background-color: #929292;width: 2.4vw;height: 2.4vw;">
+                <img style="width:60%;" src="images/Icon awesome-instagram.png" alt="">
+            </div>
+        </div>
+        <div
+            style="display: flex;align-items:center;justify-content:center;background-color: black;border-radius:5vw ;width: 18vw;height: 3.5vw;margin-left:-3vw;">
+            <img style="width: 55%;" src="images/View Details.png" alt="">
+        </div>
+        <div style="width: 4vw;margin-left:5vw;"><img style="width: 80%;"
+                src="images/Icon ionic-ios-arrow-dropdown-circle.png" alt=""></div>
+
+    </div>
+    <div style="margin:auto;width: 20vw;margin-top: 5.2vw;"><img style="width: 80%;margin-left: 12px;"
+            src="images/Our Collection.png" alt=""></div>
+    <div style="margin:auto;width:40vw;margin-top: 20px;"><img style="width: 90%;margin-left: 10px;"
+            src="images/discover.png" alt=""></div>
+
+    <div style="width:100%;margin-top: 13vw; background-color:#F7B79D;height:18vw;">
+        <div style="display:flex;justify-content:space-around;">
+
+            <div
+                style="margin-left:17vw;display: flex;flex-direction: column;justify-content: center;align-items: center;background-color: white;width: 15%;margin-top: -7.1vw;">
+                <img style="width: 100%;" src="images/Mask Group 1.png" alt=""><img style="width: 60%;margin-top: 10px;"
+                    src="images/Wedding Rings.png" alt=""><img style="width: 100%;margin-top:10px;margin-bottom:15px;"
+                    src="images/Every diamond in our collection.png" alt="">
+            </div>
+            <div
+                style="display: flex;flex-direction: column;justify-content: center;align-items: center;background-color: white;width: 15%;margin-top: -7.1vw;">
+                <img style="width: 100%;" src="images/Mask Group 2.png" alt=""><img style="width: 70%;margin-top: 10px;"
+                    src="images/Engagement Rings.png" alt=""><img
+                    style="width: 100%;margin-top:10px;margin-bottom:15px;"
+                    src="images/Every diamond in our collection.png" alt="">
+            </div>
+            <div
+                style="display: flex;flex-direction: column;justify-content: center;align-items: center;background-color: white;width: 15%;margin-top: -7.1vw;">
+                <img style="width: 100%;" src="images/Mask Group 3.png" alt=""><img style="width: 70%;margin-top: 10px;"
+                    src="images/finejew.png" alt=""><img style="width: 100%;margin-top:10px;margin-bottom:15px;"
+                    src="images/Every diamond in our collection.png" alt="">
+            </div>
+            <div
+                style="margin-right:17vw;display: flex;flex-direction: column;justify-content: center;align-items: center;background-color: white;width: 15%;margin-top: -7.1vw;">
+                <img style="width: 100%;" src="images/Mask Group 4.png" alt=""><img style="width: 70%;margin-top: 10px;"
+                    src="images/Latest Rings.png" alt=""><img style="width: 100%;margin-top:10px;margin-bottom:15px;"
+                    src="images/Every diamond in our collection.png" alt="">
+            </div>
+        </div>
+    </div>
+    <div style="margin:auto;width: 25vw;margin-top: 80px;"><img style="width: 100%;margin-left: 12px;"
+            src="images/Explore Loose Diamonds.png" alt=""></div>
+    <div style="margin:auto;width:40vw;margin-top: 20px;"><img style="width: 90%;margin-left: 40px;"
+            src="images/everydiamond.png" alt=""></div>
+
+
+    <div style="margin-top: 3vw;position: relative;margin-left: 2vw;">
+
+        <div id="s1"
+            style="position:relative;cursor:pointer;transition: all 0.5s ease-in-out;width: 15vw;margin-left: 10vw;z-index: 1;"
+            onclick="h(this)">
+            <div id="t1"
+                style="transition: all 0.5s ease-in-out;background-color: #FAFAFA;width: 14.vw;border-top: 1px solid #DFDFDF;border-left: 1px solid #DFDFDF;border-right: 1px solid #DFDFDF;margin: auto;transform: skew(0,3deg)">
+                <img style="width: 100%;" src="images/gem1.png" alt="">
+            </div>
+            <div id="u1"
+                style="transition: all 0.5s ease-in-out;background-color: #FAFAFA;display: flex;justify-content: center;flex-direction: column;border: 1px solid #DFDFDF;transform: skew(0,-3deg);margin-top: -12px;">
+                <img style="margin-top: 5px;" src="images/Round.png" alt="">
+                <img style="margin-bottom: 5px;" src="images/everySlider.png" alt="">
+            </div>
+        </div>
+        <div id="s2"
+            style="position:relative;cursor:pointer;transition: all 0.5s ease-in-out;;width: 15vw;;margin-left: 20vw;z-index: 2;"
+            onclick="h(this)">
+            <div id="t2"
+                style="transition: all 0.5s ease-in-out;background-color: #FAFAFA;width: 14.vw;border-top: 1px solid #DFDFDF;border-left: 1px solid #DFDFDF;border-right: 1px solid #DFDFDF;margin: auto;transform: skew(0,3deg)">
+                <img style="width: 100%;" src="images/gem2.png" alt="">
+            </div>
+            <div id="u2"
+                style="transition: all 0.5s ease-in-out;background-color: #FAFAFA;display: flex;justify-content: center;flex-direction: column;border: 1px solid #DFDFDF;transform: skew(0,-3deg);margin-top: -12px;">
+                <img style="margin-top: 5px;" src="images/Emerald.png" alt="">
+                <img style="margin-bottom: 5px;" src="images/everySlider.png" alt="">
+            </div>
+        </div>
+        <div id="s3"
+            style="position:relative;cursor:pointer;transition: all 0.5s ease-in-out;;width: 15vw;;margin-left: 30vw;z-index: 3;"
+            onclick="h(this)">
+            <div id="t3"
+                style="transition: all 0.5s ease-in-out;width: 14.vw;border-top: 1px solid #DFDFDF;border-left: 1px solid #DFDFDF;background-color: #FAFAFA;border-right: 1px solid #DFDFDF;margin: auto;transform: skew(0,3deg)">
+                <img style="width: 100%;" src="images/gem1.png" alt="">
+            </div>
+            <div id="u3"
+                style="transition: all 0.5s ease-in-out;display: flex;justify-content: center;flex-direction: column;background-color: #FAFAFA;border: 1px solid #DFDFDF;transform: skew(0,-3deg);margin-top: -12px;">
+                <img style="margin-top: 5px;" src="images/Round.png" alt="">
+                <img style="margin-bottom: 5px;" src="images/everySlider.png" alt="">
+            </div>
+        </div>
+        <div id="s4"
+            style="position:relative;cursor:pointer;transition: all 0.5s ease-in-out;;width: 15vw;z-index: 4;;margin-left: 40vw;"
+            onclick="h(this)">
+            <div id="t4"
+                style="transition: all 0.5s ease-in-out;background-color: #FAFAFA;width: 14.vw;border-top: 1px solid #DFDFDF;border-left: 1px solid #DFDFDF;border-right: 1px solid #DFDFDF;margin: auto;">
+                <img style="width: 100%;" src="images/gem4.png" alt="">
+            </div>
+            <div id="u4"
+                style="transition: all 0.5s ease-in-out;background-color: #FAFAFA;display: flex;justify-content: center;flex-direction: column;border: 1px solid #DFDFDF;margin-top: -12px;">
+                <img style="margin-top: 5px;" src="images/ovalwriting.png" alt="">
+                <img style="margin-bottom: 5px;" src="images/everySlider.png" alt="">
+            </div>
+        </div>
+        <div id="s5"
+            style="position:relative;cursor:pointer;transition: all 0.5s ease-in-out;;width: 15vw;z-index: 3;margin-left: 50vw;"
+            onclick="h(this)">
+            <div id="t5"
+                style="transition: all 0.5s ease-in-out;background-color: #FAFAFA;width: 14.vw;border-top: 1px solid #DFDFDF;border-left: 1px solid #DFDFDF;border-right: 1px solid #DFDFDF;margin: auto;transform: skew(0,-3deg);">
+                <img style="width: 100%;" src="images/gem5.png" alt="">
+            </div>
+            <div id="u5"
+                style="transition: all 0.5s ease-in-out;background-color: #FAFAFA;display: flex;justify-content: center;flex-direction: column;border: 1px solid #DFDFDF;margin-top: -12px;transform: skew(0,3deg);">
+                <img style="margin-top: 5px;" src="images/heartmain.png" alt="">
+                <img style="margin-bottom: 5px;" src="images/everySlider.png" alt="">
+            </div>
+        </div>
+        <div id="s6"
+            style="position:relative;cursor:pointer;transition: all 0.5s ease-in-out;;width: 15vw;z-index: 2;margin-left: 60vw;"
+            onclick="h(this)">
+            <div id="t6"
+                style="transition: all 0.5s ease-in-out;background-color: #FAFAFA;width: 14.vw;border-top: 1px solid #DFDFDF;border-left: 1px solid #DFDFDF;border-right: 1px solid #DFDFDF;margin: auto;transform: skew(0,-3deg);">
+                <img style="width: 100%;" src="images/gem6.png" alt="">
+            </div>
+            <div id="u6"
+                style="transition: all 0.5s ease-in-out;background-color: #FAFAFA;display: flex;justify-content: center;flex-direction: column;border: 1px solid #DFDFDF;margin-top: -12px;transform: skew(0,3deg);">
+                <img style="margin-top: 5px;" src="images/Asscher.png" alt="">
+                <img style="margin-bottom: 5px;" src="images/everySlider.png" alt="">
+            </div>
+        </div>
+        <div id="s7"
+            style="position:relative;cursor:pointer;transition: all 0.5s ease-in-out;;width: 15vw;z-index: 1;margin-left: 70vw;"
+            onclick="h(this)">
+            <div id="t7"
+                style="transition: all 0.5s ease-in-out;background-color: #FAFAFA;width: 14.vw;border-top: 1px solid #DFDFDF;border-left: 1px solid #DFDFDF;border-right: 1px solid #DFDFDF;margin: auto;transform: skew(0,-3deg);">
+                <img style="width: 100%;" src="images/gem5.png" alt="">
+            </div>
+            <div id="u7"
+                style="transition: all 0.5s ease-in-out;background-color: #FAFAFA;display: flex;justify-content: center;flex-direction: column;border: 1px solid #DFDFDF;margin-top: -12px;transform: skew(0,3deg);">
+                <img style="margin-top: 5px;" src="images/heartmain.png" alt="">
+                <img style="margin-bottom: 5px;" src="images/everySlider.png" alt="">
+            </div>
+        </div>
+    </div>
+    <div style="display: flex;justify-content:center;align-items:center;margin-top: 5vw;">
+        <div id="d1"
+            style="transition:all 0.5s ease-in-out;width: 1vw;height: 1vw;background-color: #DBDBDB;border-radius: 50%;margin: 0.4vw;">
+        </div>
+        <div id="d2"
+            style="transition:all 0.5s ease-in-out;width: 1vw;height: 1vw;background-color: #DBDBDB;border-radius: 50%;margin: 0.4vw;">
+        </div>
+        <div id="d3"
+            style="transition:all 0.5s ease-in-out;width: 1vw;height: 1vw;background-color: #DBDBDB;border-radius: 50%;margin: 0.4vw;">
+        </div>
+        <div id="d4"
+            style="transition:all 0.5s ease-in-out;width: 1vw;height: 1vw;background-color: #929292;border-radius: 50%;margin: 0.4vw;">
+        </div>
+        <div id="d5"
+            style="transition:all 0.5s ease-in-out;width: 1vw;height: 1vw;background-color: #DBDBDB;border-radius: 50%;margin: 0.4vw;">
+        </div>
+        <div id="d6"
+            style="transition:all 0.5s ease-in-out;width: 1vw;height: 1vw;background-color: #DBDBDB;border-radius: 50%;margin: 0.4vw;">
+        </div>
+        <div id="d7"
+            style="transition:all 0.5s ease-in-out;width: 1vw;height: 1vw;background-color: #DBDBDB;border-radius: 50%;margin: 0.4vw;">
+        </div>
+
+    </div>
+
+    <div style="display:flex;justify-content:space-evenly;margin-top: 7vw;">
+        <div style="margin-left:30vw">
+            <div style="width: 25vw;"><img style="width: 100%;" src="images/Keep In Touch.png" alt=""></div>
+            <div style="width: 33vw;margin-top: 2.6vw;"><img style="width: 100%;" src="images/ourlab.png" alt=""></div>
+            <div style="width: 35vw;margin-top: 5.2vw;"><img style="width: 100%;"
+                    src="images/Enter your email Id to subscribe.png" alt=""></div>
+            <div style="width: 33vw;margin-top: -0.84vw;"><img style="width: 100%;" src="images/Path 15.png" alt="">
+            </div>
+            <div
+                style="display:flex;align-items:center;justify-content:center;width: 17vw;background-color: black;height: 3.5vw;margin-top: 50px;margin-bottom: 50px;border-radius:5vw;">
+                <img style="width: 60%;" src="images/Sign Up.png" alt="">
+            </div>
+        </div>
+        <div style="margin-right:30vw;">
+            <div style="display: flex;align-items:center;margin-top: 30px;">
+                <div style="width: 15vw;margin: 10px;"><img style="width: 100%;" src="images/Mask Group 5.png" alt="">
+                </div>
+                <div style="width: 15vw;margin: 10px;"><img style="width: 100%;" src="images/Mask Group 7.png" alt="">
+                </div>
+            </div>
+            <div style="display: flex;align-items:center;">
+                <div style="width: 15vw;margin: 10px;"><img style="width: 100%;" src="images/Mask Group 6.png" alt="">
+                </div>
+                <div style="width: 15vw;margin: 10px;"><img style="width: 100%;" src="images/Mask Group 8.png" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div style="margin-left: 14.6vw;width:68vw;margin-bottom: 20px;"><img style="width: 100%;" src="images/Path 16.png"
+            alt=""></div>
+    <div style="width:100%;background-color: #F9F9F9;padding-top: 3vw;margin-top: 4vw;">
+        <div style="display:flex;justify-content:center;"><img style="width: 15%;" src="images/Group 1.png" alt="">
+        </div>
+        <div style="display:flex;justify-content:center;margin-top:1.5vw;"><img style="width: 30%;"
+                src="images/20+ Years Of Trust.png" alt=""></div>
+        <div style="display:flex;justify-content:center;margin-top:3vw;margin-left: 1vw;"><img style="width: 70%;"
+                src="images/diamondsca.png" alt=""></div>
+        <div style="margin-left: 14.6vw;width:68vw;margin-top: 3vw;"><img style="width: 100%;" src="images/Path 16.png"
+                alt=""></div>
+        <div
+            style="display: flex;justify-content:center;align-items: center;margin-top: 3vw;width:70vw;margin-left:16vw;">
+            <div><img style="width: 70%;" src="images/Education.png" alt=""></div>
+            <div><img style="width: 70%;" src="images/About Us.png" alt=""></div>
+            <div><img style="width: 70%;" src="images/Customer Care.png" alt=""></div>
+            <div><img style="width: 70%;" src="images/Contact Us.png" alt=""></div>
+        </div>
+        <div
+            style="display: flex;justify-content:center;align-items:center;margin-top: 5vw;width:70vw;margin-left:15vw;">
+            <div><img style="width:70%;" src="images/im1.png" alt=""></div>
+            <div><img style="width:70%;" src="images/im2.png" alt=""></div>
+            <div><img style="width:70%;" src="images/im3.png" alt=""></div>
+            <div><img style="width:70%;" src="images/im4.png" alt=""></div>
+            <div><img style="width:70%;" src="images/im5.png" alt=""></div>
+            <div><img style="width:70%;" src="images/im6.png" alt=""></div>
+            <div><img style="width:70%;" src="images/im7.png" alt=""></div>
+            <div><img style="width:70%;" src="images/im8.png" alt=""></div>
+            <div><img style="width:70%;" src="images/im9.png" alt=""></div>
+        </div>
+        <div style="display: flex;justify-content:center;margin-top: 4vw;"><img style="width: 60%;"
+                src="images/zz.png" alt=""></div>
+    </div>
+</body>
+<script>
+    var btn1Css = document.getElementById('btn1').style.cssText = 'top: 26%; left: 0;width:20%;'
+    var btn2Css = document.getElementById('btn2').style.cssText = 'top: -13%; left: 32%;width:40%;'
+    var btn3Css = document.getElementById('btn3').style.cssText = 'top: 16%; right: 0;width:20%;'
+    let large1 = document.getElementById('large1')
+    let large2 = document.getElementById('large2')
+    let large3 = document.getElementById('large3')
+    let bold1 = document.getElementById('bold1')
+    let bold2 = document.getElementById('bold2')
+    let bold3 = document.getElementById('bold3')
+    let price1 = document.getElementById('price1')
+    let price2 = document.getElementById('price2')
+    let price3 = document.getElementById('price3')
+    let dis1 = document.getElementById('dis1')
+    let dis2 = document.getElementById('dis2')
+    let dis3 = document.getElementById('dis3')
+    let z = 4;
+    function h(e) {
+        let x = document.getElementById(e.id).style.marginLeft
+
+        if (x == '10vw') {
+
+            for (let i = 1; i <= 7; i++) {
+                let temp = document.getElementById(`s${i}`).style.marginLeft
+
+                if (temp == "10vw") {
+                    document.getElementById(`s${i}`).style.marginLeft = "40vw"
+                    document.getElementById(`s${i}`).style.zIndex = "4"
+                    document.getElementById(`t${i}`).style.transform = ""
+                    document.getElementById(`u${i}`).style.transform = ""
+
+                }
+                if (temp == "20vw") {
+                    document.getElementById(`s${i}`).style.marginLeft = "50vw"
+                    document.getElementById(`s${i}`).style.zIndex = "3"
+                    document.getElementById(`t${i}`).style.transform = "skew(0,-3deg)"
+                    document.getElementById(`u${i}`).style.transform = "skew(0,3deg)"
+                }
+                if (temp == "30vw") {
+                    document.getElementById(`s${i}`).style.marginLeft = "60vw"
+                    document.getElementById(`s${i}`).style.zIndex = "2"
+                    document.getElementById(`t${i}`).style.transform = "skew(0,-3deg)"
+                    document.getElementById(`u${i}`).style.transform = "skew(0,3deg)"
+
+                }
+
+                if (temp == "40vw") {
+                    document.getElementById(`s${i}`).style.marginLeft = "70vw"
+                    document.getElementById(`s${i}`).style.zIndex = "1"
+                    document.getElementById(`t${i}`).style.transform = "skew(0,-3deg)"
+                    document.getElementById(`u${i}`).style.transform = "skew(0,3deg)"
+                    z += 3;
+                    if (z == 8) {
+                        z = 1;
+                        for (let j = 1; j <= 7; j++) {
+                            if (j == z) {
+                                document.getElementById(`d${j}`).style.backgroundColor = "#929292"
+                            } else {
+                                document.getElementById(`d${j}`).style.backgroundColor = "#DBDBDB"
+                            }
+                        }
+
+                    } else if (z == 9) {
+                        z = 2
+                        for (let j = 1; j <= 7; j++) {
+                            if (j == z) {
+                                document.getElementById(`d${j}`).style.backgroundColor = "#929292"
+                            } else {
+                                document.getElementById(`d${j}`).style.backgroundColor = "#DBDBDB"
+                            }
+                        }
+                    }
+                    else if (z == 10) {
+                        z = 3
+                        for (let j = 1; j <= 7; j++) {
+                            if (j == z) {
+                                document.getElementById(`d${j}`).style.backgroundColor = "#929292"
+                            } else {
+                                document.getElementById(`d${j}`).style.backgroundColor = "#DBDBDB"
+                            }
+                        }
+                    }
+                    else {
+                        for (let j = 1; j <= 7; j++) {
+                            if (j == z) {
+                                document.getElementById(`d${j}`).style.backgroundColor = "#929292"
+                            } else {
+                                document.getElementById(`d${j}`).style.backgroundColor = "#DBDBDB"
+                            }
+                        }
+
+                    }
+
+                }
+                if (temp == "50vw") {
+                    document.getElementById(`s${i}`).style.marginLeft = "10vw"
+                    document.getElementById(`s${i}`).style.zIndex = "1"
+                    document.getElementById(`t${i}`).style.transform = "skew(0,3deg)"
+                    document.getElementById(`u${i}`).style.transform = "skew(0,-3deg)"
+
+
+
+                }
+                if (temp == "60vw") {
+                    document.getElementById(`s${i}`).style.marginLeft = "20vw"
+                    document.getElementById(`s${i}`).style.zIndex = "2"
+                    document.getElementById(`t${i}`).style.transform = "skew(0,3deg)"
+                    document.getElementById(`u${i}`).style.transform = "skew(0,-3deg)"
+
+
+
+                }
+                if (temp == "70vw") {
+                    document.getElementById(`s${i}`).style.marginLeft = "30vw"
+                    document.getElementById(`s${i}`).style.zIndex = "3"
+                    document.getElementById(`t${i}`).style.transform = "skew(0,3deg)"
+                    document.getElementById(`u${i}`).style.transform = "skew(0,-3deg)"
+
+                }
+            }
+
+        }
+        if (x == "20vw") {
+            for (let i = 1; i <= 7; i++) {
+                let temp = document.getElementById(`s${i}`).style.marginLeft
+                if (temp == "10vw") {
+                    document.getElementById(`s${i}`).style.marginLeft = "30vw"
+                    document.getElementById(`s${i}`).style.zIndex = "3"
+
+                }
+                if (temp == "20vw") {
+                    document.getElementById(`s${i}`).style.marginLeft = "40vw"
+                    document.getElementById(`s${i}`).style.zIndex = "4"
+                    document.getElementById(`t${i}`).style.transform = ""
+                    document.getElementById(`u${i}`).style.transform = ""
+
+                }
+                if (temp == "30vw") {
+                    document.getElementById(`s${i}`).style.marginLeft = "50vw"
+                    document.getElementById(`s${i}`).style.zIndex = "3"
+                    document.getElementById(`t${i}`).style.transform = "skew(0,-3deg)"
+                    document.getElementById(`u${i}`).style.transform = "skew(0,3deg)"
+
+                }
+
+                if (temp == "40vw") {
+                    document.getElementById(`s${i}`).style.marginLeft = "60vw"
+                    document.getElementById(`s${i}`).style.zIndex = "2"
+                    document.getElementById(`t${i}`).style.transform = "skew(0,-3deg)"
+                    document.getElementById(`u${i}`).style.transform = "skew(0,3deg)"
+                    z += 2;
+                    if (z == 8) {
+                        z = 1;
+                        for (let j = 1; j <= 7; j++) {
+                            if (j == z) {
+                                document.getElementById(`d${j}`).style.backgroundColor = "#929292"
+                            } else {
+                                document.getElementById(`d${j}`).style.backgroundColor = "#DBDBDB"
+                            }
+                        }
+
+                    } else if (z == 9) {
+                        z = 2
+                        for (let j = 1; j <= 7; j++) {
+                            if (j == z) {
+                                document.getElementById(`d${j}`).style.backgroundColor = "#929292"
+                            } else {
+                                document.getElementById(`d${j}`).style.backgroundColor = "#DBDBDB"
+                            }
+                        }
+                    }
+                    else {
+                        for (let j = 1; j <= 7; j++) {
+                            if (j == z) {
+                                document.getElementById(`d${j}`).style.backgroundColor = "#929292"
+                            } else {
+                                document.getElementById(`d${j}`).style.backgroundColor = "#DBDBDB"
+                            }
+                        }
+
+                    }
+
+                }
+                if (temp == "50vw") {
+                    document.getElementById(`s${i}`).style.marginLeft = "70vw"
+                    document.getElementById(`s${i}`).style.zIndex = "1"
+
+
+                }
+                if (temp == "60vw") {
+                    document.getElementById(`s${i}`).style.marginLeft = "10vw"
+                    document.getElementById(`s${i}`).style.zIndex = "1"
+                    document.getElementById(`t${i}`).style.transform = "skew(0,3deg)"
+                    document.getElementById(`u${i}`).style.transform = "skew(0,-3deg)"
+
+
+                }
+                if (temp == "70vw") {
+                    document.getElementById(`s${i}`).style.marginLeft = "20vw"
+                    document.getElementById(`s${i}`).style.zIndex = "2"
+                    document.getElementById(`t${i}`).style.transform = "skew(0,3deg)"
+                    document.getElementById(`u${i}`).style.transform = "skew(0,-3deg)"
+
+                }
+            }
+
+        }
+        if (x == "30vw") {
+
+            for (let i = 1; i <= 7; i++) {
+                let temp = document.getElementById(`s${i}`).style.marginLeft
+                if (temp == "10vw") {
+                    document.getElementById(`s${i}`).style.marginLeft = "20vw"
+                    document.getElementById(`s${i}`).style.zIndex = "2"
+
+                }
+                if (temp == "20vw") {
+                    document.getElementById(`s${i}`).style.marginLeft = "30vw"
+                    document.getElementById(`s${i}`).style.zIndex = "3"
+
+                }
+                if (temp == "30vw") {
+                    document.getElementById(`s${i}`).style.marginLeft = "40vw"
+                    document.getElementById(`s${i}`).style.zIndex = "4"
+                    document.getElementById(`t${i}`).style.transform = ""
+                    document.getElementById(`u${i}`).style.transform = ""
+
+                }
+
+                if (temp == "40vw") {
+                    document.getElementById(`s${i}`).style.marginLeft = "50vw"
+                    document.getElementById(`s${i}`).style.zIndex = "3"
+                    document.getElementById(`t${i}`).style.transform = "skew(0,-3deg)"
+                    document.getElementById(`u${i}`).style.transform = "skew(0,3deg)"
+                    z++;
+                    if (z == 8) {
+                        z = 1;
+                        for (let j = 1; j <= 7; j++) {
+                            if (j == z) {
+                                document.getElementById(`d${j}`).style.backgroundColor = "#929292"
+                            } else {
+                                document.getElementById(`d${j}`).style.backgroundColor = "#DBDBDB"
+                            }
+                        }
+
+                    } else {
+                        for (let j = 1; j <= 7; j++) {
+                            if (j == z) {
+                                document.getElementById(`d${j}`).style.backgroundColor = "#929292"
+                            } else {
+                                document.getElementById(`d${j}`).style.backgroundColor = "#DBDBDB"
+                            }
+                        }
+
+                    }
+
+
+                }
+                if (temp == "50vw") {
+                    document.getElementById(`s${i}`).style.marginLeft = "60vw"
+                    document.getElementById(`s${i}`).style.zIndex = "2"
+
+
+                }
+                if (temp == "60vw") {
+                    document.getElementById(`s${i}`).style.marginLeft = "70vw"
+                    document.getElementById(`s${i}`).style.zIndex = "1"
+
+
+                }
+                if (temp == "70vw") {
+                    document.getElementById(`s${i}`).style.marginLeft = "10vw"
+                    document.getElementById(`s${i}`).style.zIndex = "1"
+                    document.getElementById(`t${i}`).style.transform = "skew(0,3deg)"
+                    document.getElementById(`u${i}`).style.transform = "skew(0,-3deg)"
+
+                }
+            }
+        }
+        if (x == "50vw") {
+            for (let i = 1; i <= 7; i++) {
+                let temp = document.getElementById(`s${i}`).style.marginLeft
+                if (temp == "10vw") {
+                    document.getElementById(`s${i}`).style.marginLeft = "70vw"
+                    document.getElementById(`s${i}`).style.zIndex = "1"
+                    document.getElementById(`t${i}`).style.transform = "skew(0,-3deg)"
+                    document.getElementById(`u${i}`).style.transform = "skew(0,3deg)"
+
+
+
+                }
+                if (temp == "20vw") {
+                    document.getElementById(`s${i}`).style.marginLeft = "10vw"
+                    document.getElementById(`s${i}`).style.zIndex = "1"
+
+                }
+                if (temp == "30vw") {
+                    document.getElementById(`s${i}`).style.marginLeft = "20vw"
+                    document.getElementById(`s${i}`).style.zIndex = "2"
+
+
+
+                }
+
+                if (temp == "40vw") {
+                    document.getElementById(`s${i}`).style.marginLeft = "30vw"
+                    document.getElementById(`s${i}`).style.zIndex = "3"
+                    document.getElementById(`t${i}`).style.transform = "skew(0,3deg)"
+                    document.getElementById(`u${i}`).style.transform = "skew(0,-3deg)"
+                    z--;
+                    if (z == 0) {
+                        z = 7;
+                        for (let j = 1; j <= 7; j++) {
+                            if (j == z) {
+                                document.getElementById(`d${j}`).style.backgroundColor = "#929292"
+                            } else {
+                                document.getElementById(`d${j}`).style.backgroundColor = "#DBDBDB"
+                            }
+                        }
+
+                    } else {
+                        for (let j = 1; j <= 7; j++) {
+                            if (j == z) {
+                                document.getElementById(`d${j}`).style.backgroundColor = "#929292"
+                            } else {
+                                document.getElementById(`d${j}`).style.backgroundColor = "#DBDBDB"
+                            }
+                        }
+
+                    }
+
+                }
+                if (temp == "50vw") {
+                    document.getElementById(`s${i}`).style.marginLeft = "40vw"
+                    document.getElementById(`s${i}`).style.zIndex = "4"
+                    document.getElementById(`t${i}`).style.transform = ""
+                    document.getElementById(`u${i}`).style.transform = ""
+
+
+                }
+                if (temp == "60vw") {
+                    document.getElementById(`s${i}`).style.marginLeft = "50vw"
+                    document.getElementById(`s${i}`).style.zIndex = "3"
+
+
+                }
+                if (temp == "70vw") {
+                    document.getElementById(`s${i}`).style.marginLeft = "60vw"
+                    document.getElementById(`s${i}`).style.zIndex = "2"
+
+                }
+            }
+
+        }
+        if (x == "60vw") {
+            for (let i = 1; i <= 7; i++) {
+                let temp = document.getElementById(`s${i}`).style.marginLeft
+                if (temp == "10vw") {
+                    document.getElementById(`s${i}`).style.marginLeft = "60vw"
+                    document.getElementById(`s${i}`).style.zIndex = "2"
+                    document.getElementById(`t${i}`).style.transform = "skew(0,-3deg)"
+                    document.getElementById(`u${i}`).style.transform = "skew(0,3deg)"
+
+
+
+                }
+                if (temp == "20vw") {
+                    document.getElementById(`s${i}`).style.marginLeft = "70vw"
+                    document.getElementById(`s${i}`).style.zIndex = "1"
+                    document.getElementById(`t${i}`).style.transform = "skew(0,-3deg)"
+                    document.getElementById(`u${i}`).style.transform = "skew(0,3deg)"
+
+                }
+                if (temp == "30vw") {
+                    document.getElementById(`s${i}`).style.marginLeft = "10vw"
+                    document.getElementById(`s${i}`).style.zIndex = "1"
+
+
+
+                }
+
+                if (temp == "40vw") {
+                    document.getElementById(`s${i}`).style.marginLeft = "20vw"
+                    document.getElementById(`s${i}`).style.zIndex = "2"
+                    document.getElementById(`t${i}`).style.transform = "skew(0,3deg)"
+                    document.getElementById(`u${i}`).style.transform = "skew(0,-3deg)"
+                    z -= 2;
+                    if (z == 0) {
+                        z = 7;
+                        for (let j = 1; j <= 7; j++) {
+                            if (j == z) {
+                                document.getElementById(`d${j}`).style.backgroundColor = "#929292"
+                            } else {
+                                document.getElementById(`d${j}`).style.backgroundColor = "#DBDBDB"
+                            }
+                        }
+
+                    } else if (z == -1) {
+                        z = 6;
+                        for (let j = 1; j <= 7; j++) {
+                            if (j == z) {
+                                document.getElementById(`d${j}`).style.backgroundColor = "#929292"
+                            } else {
+                                document.getElementById(`d${j}`).style.backgroundColor = "#DBDBDB"
+                            }
+                        }
+                    }
+                    else {
+                        for (let j = 1; j <= 7; j++) {
+                            if (j == z) {
+                                document.getElementById(`d${j}`).style.backgroundColor = "#929292"
+                            } else {
+                                document.getElementById(`d${j}`).style.backgroundColor = "#DBDBDB"
+                            }
+                        }
+
+                    }
+
+                }
+                if (temp == "50vw") {
+                    document.getElementById(`s${i}`).style.marginLeft = "30vw"
+                    document.getElementById(`s${i}`).style.zIndex = "3"
+                    document.getElementById(`t${i}`).style.transform = "skew(0,3deg)"
+                    document.getElementById(`u${i}`).style.transform = "skew(0,-3deg)"
+
+
+                }
+                if (temp == "60vw") {
+                    document.getElementById(`s${i}`).style.marginLeft = "40vw"
+                    document.getElementById(`s${i}`).style.zIndex = "4"
+                    document.getElementById(`t${i}`).style.transform = ""
+                    document.getElementById(`u${i}`).style.transform = ""
+
+                }
+                if (temp == "70vw") {
+                    document.getElementById(`s${i}`).style.marginLeft = "50vw"
+                    document.getElementById(`s${i}`).style.zIndex = "3"
+
+                }
+            }
+
+        }
+        if (x == "70vw") {
+            for (let i = 1; i <= 7; i++) {
+                let temp = document.getElementById(`s${i}`).style.marginLeft
+                if (temp == "10vw") {
+                    document.getElementById(`s${i}`).style.marginLeft = "50vw"
+                    document.getElementById(`s${i}`).style.zIndex = "3"
+                    document.getElementById(`t${i}`).style.transform = "skew(0,-3deg)"
+                    document.getElementById(`u${i}`).style.transform = "skew(0,3deg)"
+
+
+
+                }
+                if (temp == "20vw") {
+                    document.getElementById(`s${i}`).style.marginLeft = "60vw"
+                    document.getElementById(`s${i}`).style.zIndex = "2"
+                    document.getElementById(`t${i}`).style.transform = "skew(0,-3deg)"
+                    document.getElementById(`u${i}`).style.transform = "skew(0,3deg)"
+
+                }
+                if (temp == "30vw") {
+                    document.getElementById(`s${i}`).style.marginLeft = "70vw"
+                    document.getElementById(`s${i}`).style.zIndex = "1"
+                    document.getElementById(`t${i}`).style.transform = "skew(0,-3deg)"
+                    document.getElementById(`u${i}`).style.transform = "skew(0,3deg)"
+
+
+
+                }
+
+                if (temp == "40vw") {
+                    document.getElementById(`s${i}`).style.marginLeft = "10vw"
+                    document.getElementById(`s${i}`).style.zIndex = "1"
+                    document.getElementById(`t${i}`).style.transform = "skew(0,3deg)"
+                    document.getElementById(`u${i}`).style.transform = "skew(0,-3deg)"
+                    z -= 3;
+                    if (z == 0) {
+                        z = 7;
+                        for (let j = 1; j <= 7; j++) {
+                            if (j == z) {
+                                document.getElementById(`d${j}`).style.backgroundColor = "#929292"
+                            } else {
+                                document.getElementById(`d${j}`).style.backgroundColor = "#DBDBDB"
+                            }
+                        }
+
+                    } else if (z == -1) {
+                        z = 6;
+                        for (let j = 1; j <= 7; j++) {
+                            if (j == z) {
+                                document.getElementById(`d${j}`).style.backgroundColor = "#929292"
+                            } else {
+                                document.getElementById(`d${j}`).style.backgroundColor = "#DBDBDB"
+                            }
+                        }
+                    }
+                    else if (z == -2) {
+                        z = 5;
+                        for (let j = 1; j <= 7; j++) {
+                            if (j == z) {
+                                document.getElementById(`d${j}`).style.backgroundColor = "#929292"
+                            } else {
+                                document.getElementById(`d${j}`).style.backgroundColor = "#DBDBDB"
+                            }
+                        }
+                    }
+                    else {
+                        for (let j = 1; j <= 7; j++) {
+                            if (j == z) {
+                                document.getElementById(`d${j}`).style.backgroundColor = "#929292"
+                            } else {
+                                document.getElementById(`d${j}`).style.backgroundColor = "#DBDBDB"
+                            }
+                        }
+
+                    }
+
+                }
+                if (temp == "50vw") {
+                    document.getElementById(`s${i}`).style.marginLeft = "20vw"
+                    document.getElementById(`s${i}`).style.zIndex = "2"
+                    document.getElementById(`t${i}`).style.transform = "skew(0,3deg)"
+                    document.getElementById(`u${i}`).style.transform = "skew(0,-3deg)"
+
+
+                }
+                if (temp == "60vw") {
+                    document.getElementById(`s${i}`).style.marginLeft = "30vw"
+                    document.getElementById(`s${i}`).style.zIndex = "3"
+                    document.getElementById(`t${i}`).style.transform = "skew(0,3deg)"
+                    document.getElementById(`u${i}`).style.transform = "skew(0,-3deg)"
+
+                }
+                if (temp == "70vw") {
+                    document.getElementById(`s${i}`).style.marginLeft = "40vw"
+                    document.getElementById(`s${i}`).style.zIndex = "4"
+                    document.getElementById(`t${i}`).style.transform = ""
+                    document.getElementById(`u${i}`).style.transform = ""
+
+                }
+            }
+        }
+    }
+    function btn1() {
+        btn1Css = document.getElementById('btn1').style.cssText = 'top: -10%; left: 35%;width:30%;'
+        btn2Css = document.getElementById('btn2').style.cssText = 'top: 24%; left: 75%;width:25%;'
+        btn3Css = document.getElementById('btn3').style.cssText = 'top: 16%; right: 80%;width:20%;'
+
+        large1.className = "opacZero"
+        large2.className = "opacFull"
+        large3.className = "opacZero"
+        bold1.className = "opacZero"
+        bold2.className = "opacZero"
+        bold3.className = "opacFull"
+        price1.className = "opacZero"
+        price2.className = "opacZero"
+        price3.className = "opacFull"
+        dis1.className = "opacZero"
+        dis2.className = "opacZero"
+        dis3.className = "opacFull"
+
+    }
+
+    function btn2() {
+
+        btn2Css = document.getElementById('btn2').style.cssText = 'top: -13%; left: 30%;width:40%;'
+        btn1Css = document.getElementById('btn1').style.cssText = 'top: 25%; left: 0;width:20%;'
+        btn3Css = document.getElementById('btn3').style.cssText = 'top: 15%; right: 0;width:20%;'
+
+        large1.className = "opacFull"
+        large2.className = "opacZero"
+        large3.className = "opacZero"
+        bold1.className = "opacFull"
+        bold2.className = "opacZero"
+        bold3.className = "opacZero"
+        price1.className = "opacFull"
+        price2.className = "opacZero"
+        price3.className = "opacZero"
+        dis1.className = "opacFull"
+        dis2.className = "opacZero"
+        dis3.className = "opacZero"
+    }
+    function btn3() {
+        btn2Css = document.getElementById('btn2').style.cssText = 'top: 25%; left: 0;width:25%'
+        btn3Css = document.getElementById('btn3').style.cssText = 'top: -28%; right: 37%;width:30%;'
+        btn1Css = document.getElementById('btn1').style.cssText = 'top: 25%; left: 80%;width:20%;'
+        large1.className = "opacZero"
+        large2.className = "opacZero"
+        large3.className = "opacFull"
+        bold1.className = "opacZero"
+        bold2.className = "opacFull"
+        bold3.className = "opacZero"
+        price1.className = "opacZero"
+        price2.className = "opacFull"
+        price3.className = "opacZero"
+        dis1.className = "opacZero"
+        dis2.className = "opacFull"
+        dis3.className = "opacZero"
+
+
+    }
+
+
+</script>
+
+</html>
